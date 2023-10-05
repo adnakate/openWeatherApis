@@ -1,0 +1,9 @@
+execute_first_job:
+  cron: "* * * * *"
+  class: "FirstJob"
+  queue: default
+
+execute_import_air_pollution_data_job:
+  cron: "0 * * * *"
+  class: "ImportAirPollutionDataJob"
+  queue: default
